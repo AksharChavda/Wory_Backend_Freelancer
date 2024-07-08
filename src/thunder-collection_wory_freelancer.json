@@ -1,0 +1,135 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "wory_freelancer",
+    "collectionId": "e2b2ad68-14f3-4f30-989e-73d3aa61e63c",
+    "dateExported": "2024-07-05T16:42:08.746Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5b313151-aa8c-43f4-90f6-5bcf076b8ec1",
+            "colId": "e2b2ad68-14f3-4f30-989e-73d3aa61e63c",
+            "containerId": "",
+            "name": "http://localhost:5000/api/auth/login",
+            "url": "http://localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-04T09:20:29.984Z",
+            "modified": "2024-07-05T09:45:17.768Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"xyz@example.com\",\n  \"password\": \"xyz69\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "eaa4eed6-7e71-47a1-a41a-909850d5b953",
+            "colId": "e2b2ad68-14f3-4f30-989e-73d3aa61e63c",
+            "containerId": "",
+            "name": "http://localhost:5000/signup",
+            "url": "http://localhost:5000/api/auth/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-04T09:23:14.361Z",
+            "modified": "2024-07-05T09:44:32.847Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"xyz\",\n  \"role\": \"Client\",\n  \"email\": \"xyz@example.com\",\n  \"password\": \"xyz69\"\n}\n\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "2c11da45-6cc5-4076-8c93-39ab99fdc097",
+            "colId": "e2b2ad68-14f3-4f30-989e-73d3aa61e63c",
+            "containerId": "",
+            "name": "http://localhost:5000/api/projects/getall",
+            "url": "http://localhost:5000/api/projects/getall",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-05T07:24:23.334Z",
+            "modified": "2024-07-05T07:24:23.334Z",
+            "headers": []
+        },
+        {
+            "_id": "34dfab2e-ae05-402c-b8e0-f2cdb1389747",
+            "colId": "e2b2ad68-14f3-4f30-989e-73d3aa61e63c",
+            "containerId": "",
+            "name": "http://localhost:5000/api/projects",
+            "url": "http://localhost:5000/api/projects",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-07-05T07:28:52.080Z",
+            "modified": "2024-07-05T09:46:38.119Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njg3YzA5MTNjMjUzNWYyNmM5NDUyNTMiLCJyb2xlIjoiQ2xpZW50IiwiaWF0IjoxNzIwMTcyNzE3fQ.6iNoB2cZjOkB0w-ZhggHFvOLeDrAFbCbmY-vfaZFh5Y"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"title\": \"XYZ project\",\n  \"description\": \"Project description here here\",\n  \"tags\": [\"HTML\"],\n  \"client\": \"6687c0913c2535f26c945253\"\n\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njg3YzA5MTNjMjUzNWYyNmM5NDUyNTMiLCJyb2xlIjoiQ2xpZW50IiwiaWF0IjoxNzIwMTcyNzE3fQ.6iNoB2cZjOkB0w-ZhggHFvOLeDrAFbCbmY-vfaZFh5Y"
+            }
+        },
+        {
+            "_id": "1effe1c7-9488-4f08-afad-adad5cb9d23a",
+            "colId": "e2b2ad68-14f3-4f30-989e-73d3aa61e63c",
+            "containerId": "",
+            "name": "http://localhost:5000/api/projects/projects/6687950036cdcee8f67aa058",
+            "url": "http://localhost:5000/api/projects/projects/6687c0fe3c2535f26c945257",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-07-05T07:33:26.575Z",
+            "modified": "2024-07-05T09:56:42.775Z",
+            "headers": [
+                {
+                    "name": "projects",
+                    "value": "",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njg3YzA5MTNjMjUzNWYyNmM5NDUyNTMiLCJyb2xlIjoiQ2xpZW50IiwiaWF0IjoxNzIwMTcyNzE3fQ.6iNoB2cZjOkB0w-ZhggHFvOLeDrAFbCbmY-vfaZFh5Y"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"XYZ Title 1\",\n  \"description\": \"XYZ project description 1\",\n  \"tags\": [\"XYZTag1\", \"XYZTag2\",\"JSTag3\"]\n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njg3YzA5MTNjMjUzNWYyNmM5NDUyNTMiLCJyb2xlIjoiQ2xpZW50IiwiaWF0IjoxNzIwMTcyNzE3fQ.6iNoB2cZjOkB0w-ZhggHFvOLeDrAFbCbmY-vfaZFh5Y"
+            }
+        },
+        {
+            "_id": "9b42d850-b0d5-4254-ac98-f82e047200ab",
+            "colId": "e2b2ad68-14f3-4f30-989e-73d3aa61e63c",
+            "containerId": "",
+            "name": "http://localhost:5000/api/projects/projects/tags",
+            "url": "http://localhost:5000/api/projects/projects/6687c0fe3c2535f26c945257",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-07-05T07:44:54.292Z",
+            "modified": "2024-07-05T10:45:06.869Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njg3YzA5MTNjMjUzNWYyNmM5NDUyNTMiLCJyb2xlIjoiQ2xpZW50IiwiaWF0IjoxNzIwMTc2MjYwfQ.CGgV0MqVg-EeowI9kaLDrsr5TVjDoGhczYPsnqI5yVk"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Njg3YzA5MTNjMjUzNWYyNmM5NDUyNTMiLCJyb2xlIjoiQ2xpZW50IiwiaWF0IjoxNzIwMTc2MjYwfQ.CGgV0MqVg-EeowI9kaLDrsr5TVjDoGhczYPsnqI5yVk"
+            }
+        }
+    ],
+    "ref": "8BF54xy_l2Qrb15KKn68rtZZLOvL_40ZK2UdOGPkqQzr17hcArbjpzKD89olr8DwmEc9lmX1cx6HwBAmV1obwA"
+}
