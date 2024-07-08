@@ -74,10 +74,10 @@ Body (JSON):
   "email": "user@example.com",
   "password": "password"
 }
+```
 Response will include a token:
 
-json
-Copy code
+```json
 {
   "user": {
     "_id": "user_id",
