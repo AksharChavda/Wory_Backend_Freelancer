@@ -69,8 +69,7 @@ Method: POST
 
 Body (JSON):
 
-json
-Copy code
+```json
 {
   "email": "user@example.com",
   "password": "password"
@@ -88,6 +87,7 @@ Copy code
   },
   "token": "your_jwt_token"
 }
+```
 Adding a Project
 
 URL: http://localhost:5000/api/projects
@@ -99,13 +99,13 @@ Headers:
 Authorization: Bearer <your_jwt_token>
 Body (JSON):
 
-json
-Copy code
+```json
 {
   "title": "Project Title",
   "description": "Project Description",
   "tags": ["tag1", "tag2"]
 }
+```
 Updating a Project
 
 URL: http://localhost:5000/api/projects/:id
@@ -117,13 +117,13 @@ Headers:
 Authorization: Bearer <your_jwt_token>
 Body (JSON):
 
-json
-Copy code
+```json
 {
   "title": "Updated Title",
   "description": "Updated Description",
   "tags": ["newtag1", "newtag2"]
 }
+```
 Deleting a Project
 
 URL: http://localhost:5000/api/projects/:id
